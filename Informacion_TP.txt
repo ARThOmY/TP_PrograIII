@@ -1,2 +1,76 @@
 # TP_PrograIII
+
 Entrega Trabajo Practico Programacio III
+
+Integrantes: 
+
+    - Artiguet Iñaki. 
+    - Ashby Thomas. 
+    - Aldaz Luciano.
+
+Algoritmos Elegidos:
+    
+    - DFS
+    - Floyd
+    - Prim
+
+Librerias Externas:
+
+    - Parcial.jar --> Brindada por el Profesor de Programacion II.
+
+
+Clase Grafo:
+
+    - Las clases grafos usadas son una copia de parcial.jar, sin embargo debieron modificarse para la correcta funcionalidad de los algoritmos.
+
+    - GrafoFloyd usada para el algoritmo de Prim y Floyd es un Grafo No dirigido.
+    - GrafoDFS usada para el algoritmo DFS es un Grafo Dirigido.
+
+    - Ambos Grafos son representados con matriz de Adyacencia.
+
+
+Algoritmo DFS:
+
+    -Vertices: 1,3,5,7
+    -Aristas: {1,3} {1,5} {1,7}
+
+    Resultado esperado: Orden: [1,0,2,3]
+
+    Aclaracion: los numeros de orden no son los vertices sino sus indices en la matriz del grafo.
+
+
+Algoritmo Floyd:
+
+    -Vertices: 2,3,7,9
+    -Aristas: {2,9,p=2}, {9,7,p=10}, {2,3,p=6}, {3,9,p=8}, {7,2,p=13}
+
+    Resultado esperado:
+
+        [0, 6, 12, 2]
+        [31, 0, 18, 8]
+        [13, 19, 0, 15]
+        [23, 29, 10, 0]
+
+    Aclaraciones:
+        - El valor 99 significa que no existe camino que conecte esos vertices.
+        - El valor de la celda de la matriz es el costo total del camino entre los vertices.
+        - Los vertices son representados en la matriz por sus indices y no su etiqueta.
+
+
+Algoritmo Prim:
+
+    -Vertices: 2,3,7,9
+    -Aristas: {2,9,p=2}, {9,7,p=10}, {2,3,p=6}, {3,9,p=8}, {7,2,p=13}
+
+    Resultado esperado:
+
+        Peso Arista: 6
+        Peso Arista: 2
+        Peso Arista: 10
+        Costo Total Arbol: 18
+
+    
+    Aclaracion: Lo que imprime por pantalla son los pesos de las aristas que componen el ARMC.
+    
+
+
